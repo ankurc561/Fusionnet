@@ -1,0 +1,33 @@
+# Core numerics and data
+numpy>=1.26
+pandas>=2.2
+scipy>=1.11
+statsmodels>=0.14
+
+# Visualization
+matplotlib>=3.8
+seaborn>=0.13
+
+# Progress bars
+tqdm>=4.66
+
+# Machine learning
+scikit-learn>=1.4
+
+# Hugging Face stack
+transformers>=4.40
+datasets>=2.19
+evaluate>=0.4
+
+# PyTorch (choose the correct build for your system/GPU as needed)
+torch>=2.2
+
+# Google Cloud (BigQuery + Storage)
+google-cloud-bigquery>=3.11
+google-cloud-storage>=2.16
+
+# Google Gemini (Generative AI)
+google-generativeai>=0.7
+
+# Jupyter kernel (for local execution of notebooks)
+ipykernel>=6.29 

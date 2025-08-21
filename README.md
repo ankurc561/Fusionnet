@@ -28,20 +28,20 @@ Ensure the BigQuery dataset and Storage buckets referenced in notebooks exist, o
 
 1. Filings acquisition and parsing
 
-   - `Filings_Crawler.ipynb`: Retrieves S&P 500 tickers and fetches filings metadata/content (EDGAR). Outputs raw JSON/objects.
-   - `Filings_Dataset_parsing.ipynb`: Parses crawler outputs into tabular datasets (per filing section), ready for labeling.
+   - `Filings_ticker.ipynb`: Retrieves S&P 500 tickers and outputs a raw txt file.
+   - `Filings_Dataset_parsing.ipynb`: Parses json outputs from EDGAR crawler into tabular datasets (per filing section), ready for labelling.
 
-2. Gemini labeling
+2. Gemini labelling
 
    - `Filings_labelling.ipynb`: Uses Gemini to label filing text chunks; writes results to BigQuery.
-   - `News_Gemini_labeling.ipynb`: Uses Gemini to label news articles; writes results to BigQuery.
+   - `News_Gemini_labelling.ipynb`: Uses Gemini to label news articles; writes results to BigQuery.
 
 3. Model fine-tuning
 
-   - `FinBERT_FineTune_Filings.ipynb`: Fine-tunes FinBERT on labeled filings.
-   - `FinBERT_FineTune_News.ipynb`: Fine-tunes FinBERT on labeled news.
-   - `DeBERTa_FineTune_Filings.ipynb`: Fine-tunes DeBERTa on labeled filings.
-   - `DeBERTa_FineTune_News.ipynb`: Fine-tunes DeBERTa on labeled news.
+   - `FinBERT_FineTune_Filings.ipynb`: Fine-tunes FinBERT on labelled filings.
+   - `FinBERT_FineTune_News.ipynb`: Fine-tunes FinBERT on labelled news.
+   - `DeBERTa_FineTune_Filings.ipynb`: Fine-tunes DeBERTa on labelled filings.
+   - `DeBERTa_FineTune_News.ipynb`: Fine-tunes DeBERTa on labelled news.
 
 4. Human-reviewed evaluation
 
